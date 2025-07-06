@@ -1,0 +1,142 @@
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('../images/background.jpeg'); /* Gebruik het juiste pad naar de achtergrondafbeelding */
+    background-size: cover; /* Zorg dat de achtergrond de volledige breedte en hoogte bedekt */
+    background-repeat: no-repeat; /* Voorkom herhaling van de achtergrond */
+    background-position: center; /* Plaats de achtergrond gecentreerd */
+    background-attachment: fixed; /* Zorg dat de achtergrond vaststaat bij scrollen */
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    overflow-x: hidden;
+    min-height: 100vh; /* Zorg dat de body minimaal de volledige schermhoogte heeft */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dark overlay effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Donkere overlay */
+    z-index: -1; /* Plaats de overlay achter alle andere inhoud */
+}
+
+/* Wrapper voor de checkout container */
+.checkout-wrapper {
+    max-width: 1200px; /* Verhoog de maximale breedte van de container */
+    margin: 50px auto; /* Ruimte boven en onder de container */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling voor de plan details card */
+.plan-card {
+    background-color: rgba(34, 34, 34, 0.95); /* Donkergrijze achtergrondkleur voor de kaart */
+    border: none; /* Verwijder standaard border */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Schaduw voor diepte-effect */
+    padding: 20px;
+    margin: 10px; /* Ruimte tussen de kaarten */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ruimte tussen de inhoud en de knop */
+    align-items: center;
+    height: 100%; /* Maak alle kaarten dezelfde hoogte */
+}
+
+/* Zorg ervoor dat alle kaarten dezelfde hoogte en breedte hebben */
+.plan-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Vul de volledige hoogte van de card */
+}
+
+/* Zorg ervoor dat de kaarten dezelfde hoogte hebben */
+.plan-card .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Gouden kleur voor de titels */
+}
+
+.plan-card .card-text, .plan-card .list-group-item {
+    color: #f0f0f0; /* Lichte tekstkleur voor betere leesbaarheid */
+    background-color: transparent; /* Verwijder achtergrond van list items */
+    text-align: center; /* Centreer de tekst in de items */
+}
+
+/* Verhoog de hoogte van de lijst-items */
+.plan-card .list-group-item {
+    font-size: 1rem;
+    padding: 10px 0; /* Ruimte boven en onder elke list-item */
+    border: none; /* Verwijder de standaard lijst-border */
+}
+
+/* Prijsinformatie sectie */
+.price-info {
+    margin-top: 20px;
+}
+
+.price-info .price {
+    font-size: 2rem; /* Verhoog de grootte van de prijs */
+    font-weight: bold;
+    color: #FFD700; /* Gouden kleur voor prijzen */
+    white-space: nowrap; /* Voorkom dat de prijsregel wordt opgedeeld */
+}
+
+/* Uniforme hoogte voor de knoppen */
+.select-plan-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 12px 30px; /* Vergroot de knoppen */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: auto; /* Zorg dat de knop altijd onderaan de kaart blijft */
+}
+
+.select-plan-btn:hover {
+    background-color: #FFC700;
+    transform: scale(1.05);
+}
+
+/* Gebruik flexbox om de rijen en kolommen gelijk te maken */
+.row {
+    display: flex;
+    justify-content: center; /* Centreer de rijen */
+}
+
+.col-md-4 {
+    display: flex;
+    align-items: stretch; /* Zorg dat de kaarten gelijk worden uitgerekt */
+}
+
+/* Zorg dat de kaarten dezelfde hoogte en breedte hebben */
+.plan-card {
+    flex: 1;
+    min-width: 280px; /* Minimum breedte voor alle kaarten */
+    max-width: 320px; /* Maximum breedte voor alle kaarten */
+}
+
+/* Footer styling */
+footer {
+    background-color: #000;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Maak de footer altijd onderaan zichtbaar */
+    flex-shrink: 0;
+    margin-top: auto; /* Duw de footer naar beneden als er niet genoeg inhoud is */
+}

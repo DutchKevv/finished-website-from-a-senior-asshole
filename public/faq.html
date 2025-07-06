@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL temp-replaced FAQ</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styling/pricing.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+    
+    <script>
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h2 class="display-4 font-weight-bold">Frequently Asked Questions (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                
+                <!-- FAQ Item 1 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. What is DL temp-replaced?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            DL temp-replaced provides trading temp-replaced and bots for optimizing investments and automating strategies.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingTwo">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. How do I subscribe to DL temp-replaced?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can subscribe through our membership plans listed on the site. Visit our membership page for details.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingThree">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. How does the trading bot work?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our bot analyzes market trends and executes predefined strategies automatically.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingFour">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4. Can I cancel my subscription anytime?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, you can cancel anytime via account settings or by contacting support.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingFive">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5. What platforms are supported?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We support major cryptocurrency exchanges. Detailed instructions are available upon subscription.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingSix">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6. How do I track my trades?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Trades and performance can be tracked through the dashboard under "Trades."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingSeven">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                7. How secure is my data?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We ensure data security through encryption and other measures.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingEight">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                8. What payment methods do you accept?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We accept payments through Plug&Pay, with Mollie integration coming soon.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingNine">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                9. How do I upgrade my plan?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can upgrade your plan via the dashboard by clicking "Upgrade Plan."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-header" id="headingTen">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                10. What are the differences between the Silver, Gold, and Platinum plans?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            <p><strong>Silver Plan:</strong> Price: €XX/month. Basic trading temp-replaced, limited automated trades, standard support.</p>
+                            <p><strong>Gold Plan:</strong> Price: €XX/month. Advanced temp-replaced, priority support, increased automated trades.</p>
+                            <p><strong>Platinum Plan:</strong> Price: €XX/month. Unlimited trades, VIP support, personalized strategies, and more.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 DL temp-replaced. All rights reserved.</p>
+        </div>
+    </footer>
+
+       <!-- Footer Section -->
+       <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 DL temp-replaced. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

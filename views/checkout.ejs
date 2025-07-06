@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Upgrade Your Plan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styling/checkout.css">
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        fetch('/navbar.ejs')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="container mt-5 checkout-wrapper">
+        <h2 class="text-center mb-4">Choose Your Plan</h2>
+        <div class="row d-flex justify-content-center align-items-stretch">
+            <!-- Plan 1: Basic Plan -->
+            <div class="col-md-4 d-flex">
+                <div class="card plan-card flex-fill">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Basic Plan</h3>
+                        <p class="card-text">Start with the basics.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Access to temp-replaced</li>
+                            <li class="list-group-item">Email Support</li>
+                        </ul>
+                        <div class="price-info mt-3">
+                            <h4 class="price">€9.95/month</h4>
+                        </div>
+                        <!-- Link naar pay.ejs met plan details -->
+                        <a href="/pay?plan=basic&price=9.95" class="btn btn-warning select-plan-btn">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan 2: Silver Plan -->
+            <div class="col-md-4 d-flex">
+                <div class="card plan-card flex-fill">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Silver Plan</h3>
+                        <p class="card-text">Enhanced features for serious traders.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Access to temp-replaced</li>
+                            <li class="list-group-item">Priority Email Support</li>
+                            <li class="list-group-item">Weekly Market Analysis</li>
+                        </ul>
+                        <div class="price-info mt-3">
+                            <h4 class="price">€19.95/month</h4>
+                        </div>
+                        <!-- Link naar pay.ejs met plan details -->
+                        <a href="/pay?plan=silver&price=19.95" class="btn btn-warning select-plan-btn">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan 3: Gold Plan -->
+            <div class="col-md-4 d-flex">
+                <div class="card plan-card flex-fill">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Gold Plan</h3>
+                        <p class="card-text">Unlock all premium features.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">24/7 Trading Bot Access</li>
+                            <li class="list-group-item">Exclusive Market temp-replaced</li>
+                            <li class="list-group-item">Personalized Strategy Consultations</li>
+                        </ul>
+                        <div class="price-info mt-3">
+                            <h4 class="price">€34.95/month</h4>
+                        </div>
+                        <!-- Link naar pay.ejs met plan details -->
+                        <a href="/pay?plan=gold&price=34.95" class="btn btn-warning select-plan-btn">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 D.L. temp-replaced. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS en dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

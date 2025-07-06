@@ -1,0 +1,119 @@
+/* Algemene instellingen */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    z-index: 1; /* Z-index toegevoegd */
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; /* Overlay moet onder de content zitten */
+}
+
+.hero-section h1, .hero-section p {
+    z-index: 2; /* Z-index hoger dan overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-gold {
+    background-color: #FFD700;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #FFC700;
+    transform: scale(1.1);
+}
+
+/* Signup Section Integrated in Hero */
+.signup-section {
+    padding: 0;
+}
+
+.registration-card {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    z-index: 2; /* Zorgt ervoor dat de registratiekaart boven de overlay zit */
+}
+
+.registration-card h2 {
+    color: #FFD700;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.registration-card form .form-control {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.registration-card form .form-control::placeholder {
+    color: #888;
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits p {
+    color: #FFD700;
+    font-size: 1.1rem;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: #111;
+    color: #f0f0f0;
+    padding: 50px 0;
+}
+
+#about-us h2 {
+    color: #FFD700;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}

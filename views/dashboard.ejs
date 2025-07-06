@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styling/dashboard.css">
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <div class="container">
+        <h2 class="text-center mt-5">Your Dashboard</h2>
+
+        <!-- Account Status Section -->
+        <div class="card mb-3">
+            <div class="card-body text-center">
+                <h4>Account Status: <span class="badge badge-success">Paid</span></h4>
+                <p>Subscription: <strong>Free Plan</strong></p>
+                <!-- Upgrade to Premium Button -->
+                <a href="/checkout" class="btn btn-warning">Upgrade Your Plan</a>
+            </div>
+        </div>
+
+        <!-- Bot Status Section -->
+        <div class="card mb-3">
+            <div class="card-body text-center">
+                <h4>Bot Status: <span class="badge badge-info">Test mode</span></h4>
+                <p>Last Update: 2024-09-07 12:34:56</p>
+            </div>
+        </div>
+
+        <!-- Trades Overview Section -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="text-center">Recent Trades</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        BTC/USD <span class="badge badge-success">+2.5%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        ETH/USD <span class="badge badge-danger">-1.2%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="text-center">
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 D.L. temp-replaced. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
